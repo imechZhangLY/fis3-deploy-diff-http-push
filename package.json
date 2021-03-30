@@ -1,0 +1,39 @@
+{
+  "name": "fis3-deploy-diff-http-push",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "utils.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imechZhangLY/fis3-deploy-diff-http-push"
+  },
+  "author": "zhangluyao01",
+  "license": "UNLICENSED",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint",
+    "*.{css,less,scss,styl}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@ecomfe/eslint-config": "^4.0.0",
+    "@ecomfe/stylelint-config": "^1.0.0",
+    "babel-eslint": "^10.0.0",
+    "eslint-plugin-babel": "^5.0.0",
+    "eslint": "^7.0.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^10.0.0",
+    "stylelint": "^13.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "colors": "^1.4.0"
+  }
+}
